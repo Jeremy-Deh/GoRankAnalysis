@@ -1,6 +1,7 @@
+For the installtion, go directly to the **Installation** subcategory
 # Context
 
-Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game lost or won) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
+Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
 
 |Elo (FR)   |     Rank      |  Elo (EU) |
 |----------|:-------------:| ----------|
@@ -13,25 +14,25 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 | -600 to -501|  **6 kyu** | 1401 to 1500 |
 | -500 to -401 |  **5 kyu** | 1501 to 1600 |
 | -400 to -301 |  **4 kyu** | 1601 to 1700 |
-| -300 to -201 |  **3 kyu**| 1701 to 1800 |
-| -200 to -101 |  **2 kyu**| 1801 to 1900 |
-| -100 to -1 |  **1 kyu**| 1901 to 2000 |
-| 0 to 99 | **1 dan**| 2001 to 2100 |
-| 100 to 199 | **2 dan**| 2101 to 2200 |
+| -300 to -201 |  **3 kyu** | 1701 to 1800 |
+| -200 to -101 |  **2 kyu** | 1801 to 1900 |
+| -100 to -1 |  **1 kyu** | 1901 to 2000 |
+| 0 to 99 | **1 dan** | 2001 to 2100 |
+| 100 to 199 | **2 dan** | 2101 to 2200 |
 | ... |  ... | ... |
-| 600 to 699 | **7 dan**| 2601 to 2700 |
+| 600 to 699 | **7 dan** | 2601 to 2700 |
 
 
 
-Multiple algorithms exist, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/)which takes into accouont the time-varying strengths of players 
+Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into accouont the time-varying strengths of players. However, for all of those algorithms, the initial assesment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
 
-However all these methods suffer from multiple major limitations for a reliable estimation of level
+Even more, these methods suffer from multiple major limitations for a reliable estimation of a rank :
 
-1. These methods require multiple games to assess the level of a new player, and even more to assess the true level of someone who is making fast progresses but aready posses a rank, therefore, their ranking does not represent their real level and capabilities
+1. They require multiple games to adjust the true level of someone which is making fast progresses, therefore, their ranking does not always represent their real level and capabilities.
 
-2. These methods are higly suceptible to the arrival of new waves of players, as if a lot of new player arrive, the previously middle-ranked players which have some experience will win a lot of games against those freshmens arriving, increasing their rank even though their true level did not change, this problem often requires the need of players called "anchors" players that supposedly do not get better over time, that are used to recalibrate everyone 
+2. These methods are higly suceptible to the arrival of new waves of players, as if a lot of new player arrive, the previously middle-ranked players which have some experience will win a lot of games against those freshmens arriving, increasing their rank even though their true level and strength did not change. This problem often requires the need of players called [anchors](https://www.gokgs.com/help/anchor.html), players that are supposedly very stable and do not get better over time, and that are used to recalibrate everyone.
 
-3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone 1 dan today, has the same strength than someone 1 dan  that lived centuries ago as there is no way for a 1 dan to play against a 1 dan from from XVIIe century or before, to compare strength.
+3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone ranked 1 dan today, has the same strength than someone ranked 1 dan that lived centuries ago, as there is no way for a "21st century 1 dan" to play against a "XVIIe century 1 dan" and compare which of them was better.
 
 For all these reason the ranking system needs a more accurate and also faster way to determine the level of a player
 
@@ -55,3 +56,5 @@ If we take into account that a player with a fixed rank does not play every game
 # Installation
 
 In settings replace the line "model"
+
+# Use
