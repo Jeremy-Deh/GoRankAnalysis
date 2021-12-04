@@ -25,7 +25,7 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 
 
 
-Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into accouont the time-varying strengths of players. However, for all of those algorithms, the initial assesment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
+Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into accouont the time-varying strengths of players. However, for all of those algorithms, the initial assessment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
 
 Even more, these methods suffer from multiple major limitations for a reliable estimation of a rank :
 
@@ -46,13 +46,13 @@ The games used for training the model come from the Go Server KGS, on labelized 
 For all the games, every move of the players were analyzed by Katago and the performance of both players on the full game were used to train the predictive model. 
 Only games with more than xx moves were retained 
 
-# Performances assesment
+# Performances assessment
 
 While the predictions can intrinsically not return the exact level of all players on the testing set because :
 1. KGS ranks suffer from the same limitations as listed above, knowing that it is slow to adapt the real level of a player, and a player labelized as 12 kyu  can for example already play like a 10 kyu or a 9 kyu
 2. Most player (as all humans) are not highly constant in their concentration and performances, and even if the overall level of the person is for example 12 kyu and stable over time, the player can sometime suffer from fatigue and play like a 13 or 14 kyu if he is tired, or on the other way around, he can sometime be more involved in some games (in tournament for example) and focus more on each move and have a game where he plays better than his usual level and play like a 10 or 9 kyu on games he values more. Those up and dones give him a stable of 12 kyu even though he'll sometime play better, sometime worse.
 
-If we take into account that a player with a fixed rank does not play every game with the same strength, the performances of the model are strongly accurate and allow the establishment of a quick and reliable assesment of the person's level.
+If we take into account that a player with a fixed rank does not play every game with the same strength, the performances of the model are strongly accurate and allow the establishment of a quick and reliable assessment of the person's level.
 
 The median error of rank estimation being less than 2, which is in the range of strength variation of a player,we can assume that the difference between the prediction given by the model and the official rank of the player at the time he played the game, can be mainly imputed to the human performance variation.
 ![ConfusionGraph](ModelPerformances/ConfusionGraph.png)
