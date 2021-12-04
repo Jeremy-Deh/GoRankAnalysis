@@ -85,7 +85,7 @@ settings = {
     "model": "C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz",
 }
 ```
-and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz` for the pthway and name of the .bin.gz that you've got 
+and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz` for the pathway and name of the .bin.gz that you've got 
 
 # Rank prediction
 To make your own estimation of the level of your games : 
