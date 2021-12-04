@@ -73,7 +73,7 @@ The second one is present in this project and don't need any extra-downloads
 ### If reading code lines give you headaches
 To run it : 
 - Be sure to have python installed on your machine 
-- - (if not, just download and install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
+    - (if not, just download and install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
  or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg))
 - After the installation is somplete, clone this repo (or download the [folder](https://github.com/Jeremy-Deh/GoRankAnalysis/archive/refs/heads/main.zip) and unzip it) 
 - Go in the main folder and double-click "install.bat" to make sure you have all python dependencies that are needed for the program to run.
