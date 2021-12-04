@@ -700,5 +700,5 @@ y_pred_rang=np.round(y_pred,1)
 y_pred_rang=[str(x)+"d" if x>0 else str(abs(x)+1)+"k" for x in y_pred_rang]
 
 df=pd.concat([pd.Series(df4.Pseudo,name="Pseudo").reset_index(drop=True),pd.Series(y_pred,name="Rang predit").reset_index(drop=True),pd.Series(y_pred_rang,name="Rang nommé").reset_index(drop=True)],axis=1)
-df.to_csv("prediction.csv")
+df.to_csv("data/prediction.csv")
 

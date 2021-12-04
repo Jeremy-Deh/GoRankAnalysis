@@ -11,15 +11,16 @@ goto :EOF
 echo Python is not installed on your system.
 echo Now opeing the download URL.
 start "" "https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe"
-echo Download the file and install it, then wait for the end before pressing any key 
+echo Download the fil and install it, then wait for the end before pressing any key 
 pause
 goto :EOF
 
 :PYTHON_DOES_EXIST
-pip install -r requirements.txt --user
-echo verify that there is no error (usually in red)
 pause
-exit
+:: This will retrieve Python 3.8.0 for example.
+for /f "delims=" %%V in ('python -V') do @set ver=%%V
+echo Congrats, %ver% is installed...
 goto :EOF
 
-
+pause
+exit 
