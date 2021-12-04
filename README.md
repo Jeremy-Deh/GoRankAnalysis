@@ -76,7 +76,7 @@ To run it :
 - Go in the main folder and double-click "install.bat" (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
 
 ## Settings
-```json
+```python
 settings = {
     "fast_visits": 25,
     "max_visits": 500,
