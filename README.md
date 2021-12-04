@@ -25,7 +25,7 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 
 
 
-Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into accouont the time-varying strengths of players. However, for all of those algorithms, the initial assessment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
+Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into account the time-varying strengths of players. However, for all of those algorithms, the initial assessment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
 
 Even more, these methods suffer from multiple major limitations for a reliable estimation of a rank :
 
@@ -49,7 +49,7 @@ Only games with more than xx moves were retained
 # Performances assessment
 
 While the predictions can intrinsically not return the exact level of all players on the testing set because :
-1. KGS ranks suffer from the same limitations as listed above, knowing that it is slow to adapt the real level of a player, and a player labelized as 12 kyu  can for example already play like a 10 kyu or a 9 kyu
+1. KGS ranks suffer from the same limitations as listed above, knowing that it is slow to adapt the real level of a player, and a player labelized as 12 kyu  can for example already play like a 11 kyu or a 10 kyu
 2. Most player (as all humans) are not highly constant in their concentration and performances, and even if the overall level of the person is for example 12 kyu and stable over time, the player can sometime suffer from fatigue and play like a 13 or 14 kyu if he is tired, or on the other way around, he can sometime be more involved in some games (in tournament for example) and focus more on each move and have a game where he plays better than his usual level and play like a 10 or 9 kyu on games he values more. Those up and dones give him a stable of 12 kyu even though he'll sometime play better, sometime worse.
 
 If we take into account that a player with a fixed rank does not play every game with the same strength, the performances of the model are strongly accurate and allow the establishment of a quick and reliable assessment of the person's level.
@@ -64,26 +64,24 @@ The median error of rank estimation being less than 2, which is in the range of 
 # Installation
 ## Requirements 
 ### If you're familiar with python or programming 
-Language : Python 3 or more,
-Libraries : Refer to the requirements.txt file
-
-You will need two models to make it run, 
-The first one to assess the strength of every move played that you can download on the github of Katago, [here for Windows with only CPU](https://github.com/lightvector/KataGo/releases/download/v1.10.0/katago-v1.10.0-eigen-windows-x64.zip)  [or here](https://github.com/lightvector/KataGo/releases) if you want a GPU version or if you're using Linux or Mac.
-The second one is present in this project and don't need any extra-downloads
-### If reading code lines give you headaches
+**Language :** Python 3 or more,
+**Libraries :** Refer to the requirements.txt file
+**Models** You will need two models to make it run :
+The first one to assess the strength of every move played during the game, that you can download on the github of Katago, [here for Windows with only CPU](https://github.com/lightvector/KataGo/releases/download/v1.10.0/katago-v1.10.0-eigen-windows-x64.zip)  [or here](https://github.com/lightvector/KataGo/releases) if you want a GPU version or if you're using Linux or Mac.
+The second one to predict the rank of the player on the KGS scale, according to his moves. This one is present in this project and don't need any extra-downloads
+### If reading code lines gives you headaches
 To run it : 
 - Be sure to have python installed on your machine 
-    - (if not, just download and install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
- or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg))
-- After the installation is somplete, clone this repo (or download the [folder](https://github.com/Jeremy-Deh/GoRankAnalysis/archive/refs/heads/main.zip) and unzip it) 
+    - if you don't have it, just download and install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
+ or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg)
+- After the installation is complete, clone this repo (or download the [folder](https://github.com/Jeremy-Deh/GoRankAnalysis/archive/refs/heads/main.zip) and unzip it) 
 - Go in the main folder and double-click "install.bat" to make sure you have all python dependencies that are needed for the program to run.
 
 ## Settings
 In settings replace the line "model" with ...
 ...
-# Use
+# Rank prediction
 To make your own estimation of the level of your games : 
-- Clone this repo (or download it)
 - Place your .sgf file if the folder named "data"
 - Launch the file "GoPredict.py"
 - Open the newly created file "prediction.csv"
