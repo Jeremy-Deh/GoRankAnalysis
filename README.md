@@ -65,8 +65,8 @@ The median error of rank estimation being less than 2, which is in the range of 
 `- Libraries :` Refer to the requirements.txt file
 
 `- Models :` You will need two models to make it run :
-The first one to assess the strength of every move played during the game, that you can download on the github of Katago, [here for Windows with only CPU](https://github.com/lightvector/KataGo/releases/download/v1.10.0/katago-v1.10.0-eigen-windows-x64.zip) or [here](https://github.com/lightvector/KataGo/releases) if you want a GPU version or if you're using Linux or Mac.
-The second one to predict the rank of the player on the KGS scale, according to his moves. This one is present in this project and don't need any extra-downloads
+1. The first one to assess the strength of every move played during the game, that you can download on the github of Katago, [here for Windows with only CPU](https://github.com/lightvector/KataGo/releases/download/v1.10.0/katago-v1.10.0-eigen-windows-x64.zip) or [here](https://github.com/lightvector/KataGo/releases) if you want a GPU version or if you're using Linux or Mac.
+2. The second one to predict the rank of the player on the KGS scale, according to his moves. This one is present in this project and don't need any extra-downloads
 ### If reading code lines gives you headaches
 To run it : 
 - Be sure to have python installed on your machine 
@@ -90,5 +90,5 @@ and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420
 # Rank prediction
 To make your own estimation of the level of your games : 
 - Place your .sgf file if the folder named "data"
-- Launch the file "GoPredict.py"
+- Launch the file `GoPredict.py`
 - Open the newly created file "prediction.csv"
