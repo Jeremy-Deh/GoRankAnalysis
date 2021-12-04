@@ -76,6 +76,7 @@ To run it :
 - Go in the main folder and double-click "install.bat" (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
 
 ## Settings
+In `GoPredict.py` find :
 ```python
 settings = {
     "fast_visits": 25,
@@ -84,6 +85,7 @@ settings = {
     "model": "C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz",
 }
 ```
+and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz` for the pthway and name of the .bin.gz that you've got 
 
 # Rank prediction
 To make your own estimation of the level of your games : 
