@@ -1,9 +1,7 @@
+.gitignore
 AnalyseAvance.csv
-ML.ipynb
-ML-checkpoint.ipynb
+*.ipynb
 sgftest
 .ipynb_checkpoints
-Training.ipynb
-Untitled.ipynb
 catboost_info
 data/

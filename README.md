@@ -4,24 +4,24 @@
 
 Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
 
-|Elo (FR)   |     Rank      |  Elo (EU) |
-|----------|:-------------:| ----------|
-| -2000 to -1901 |  **20 kyu** | 1 to 100 |
-| -1900 to -1801 |  **19 kyu** | 101 to 200 |
-| -1800 to -1701 |  **18 kyu** | 201 to 300 |
-| -1700 to -1601 |  **17 kyu** | 301 to 400 |
-| -1600 to -1501 |  **16 kyu** | 401 to 500 |
-| ... |  ... | ... |
-| -600 to -501|  **6 kyu** | 1401 to 1500 |
-| -500 to -401 |  **5 kyu** | 1501 to 1600 |
-| -400 to -301 |  **4 kyu** | 1601 to 1700 |
-| -300 to -201 |  **3 kyu** | 1701 to 1800 |
-| -200 to -101 |  **2 kyu** | 1801 to 1900 |
-| -100 to -1 |  **1 kyu** | 1901 to 2000 |
-| 0 to 99 | **1 dan** | 2001 to 2100 |
-| 100 to 199 | **2 dan** | 2101 to 2200 |
-| ... |  ... | ... |
-| 600 to 699 | **7 dan** | 2601 to 2700 |
+|    Elo (FR)    |     Rank      |   Elo (EU)   |
+|----------------|:-------------:|--------------|
+| -2000 to -1901 |   **20 kyu**  |  1 to 100    |
+| -1900 to -1801 |   **19 kyu**  |  101 to 200  |
+| -1800 to -1701 |   **18 kyu**  |  201 to 300  |
+| -1700 to -1601 |   **17 kyu**  |  301 to 400  |
+| -1600 to -1501 |   **16 kyu**  |  401 to 500  |
+|      ...       |       ...     |     ...      |
+|  -600 to -501  |   **6 kyu**   | 1401 to 1500 |
+|  -500 to -401  |   **5 kyu**   | 1501 to 1600 |
+|  -400 to -301  |   **4 kyu**   | 1601 to 1700 |
+|  -300 to -201  |   **3 kyu**   | 1701 to 1800 |
+|  -200 to -101  |   **2 kyu**   | 1801 to 1900 |
+|   -100 to -1   |   **1 kyu**   | 1901 to 2000 |
+|    0 to 99     |   **1 dan**   | 2001 to 2100 |
+|   100 to 199   |   **2 dan**   | 2101 to 2200 |
+|       ...      |       ...     |      ...     |
+|   600 to 699   |   **7 dan**   | 2601 to 2700 |
 
 
 
@@ -52,8 +52,10 @@ While the predictions can intrinsically not return the exact level of all player
 1. KGS ranks suffer from the same limitations as listed above, knowing that it is slow to adapt the real level of a player, and a player labelized as 12 kyu  can for example already play like a 10 kyu or a 9 kyu
 2. Most player (as all humans) are not highly constant in their concentration and performances, and even if the overall level of the person is for example 12 kyu and stable over time, the player can sometime suffer from fatigue and play like a 13 or 14 kyu if he is tired, or on the other way around, he can sometime be more involved in some games (in tournament for example) and focus more on each move and have a game where he plays better than his usual level and play like a 10 or 9 kyu on games he values more. Those up and dones give him a stable of 12 kyu even though he'll sometime play better, sometime worse.
 
-If we take into account that a player with a fixed rank does not play every game with the same strength, the performances of the model are strongly .... and allow the establishment of a quick and reliable assesment of the person's level and rank as ...
+If we take into account that a player with a fixed rank does not play every game with the same strength, the performances of the model are strongly accurate and allow the establishment of a quick and reliable assesment of the person's level.
 
+The median error of rank estimation being less than 2, which is in the range of strength variation of a player,we can assume that the difference between the prediction given by the model and the official rank of the player at the time he played the game, can be mainly imputed to the human performance variation.
+![Test](ModelPerformances/error.png)
 # Installation
 ## Requirements 
 ...
