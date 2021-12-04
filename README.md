@@ -5,7 +5,7 @@
 Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
 
 |    Elo (FR)    |     Rank      |   Elo (EU)   |
-|----------------|:-------------:|--------------|
+|:--------------:|:-------------:|:------------:|
 | -2000 to -1901 |   **20 kyu**  |  1 to 100    |
 | -1900 to -1801 |   **19 kyu**  |  101 to 200  |
 | -1800 to -1701 |   **18 kyu**  |  201 to 300  |
@@ -14,7 +14,6 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 |  -300 to -201  |   **3 kyu**   | 1701 to 1800 |
 |  -200 to -101  |   **2 kyu**   | 1801 to 1900 |
 |   -100 to -1   |   **1 kyu**   | 1901 to 2000 |
----
 |    0 to 99     |   **1 dan**   | 2001 to 2100 |
 |   100 to 199   |   **2 dan**   | 2101 to 2200 |
 |       ...      |       ...     |      ...     |
@@ -77,8 +76,15 @@ To run it :
 - Go in the main folder and double-click "install.bat" (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
 
 ## Settings
-In settings replace the line "model" with ...
-...
+```json
+settings = {
+    "fast_visits": 25,
+    "max_visits": 500,
+    "threads": 64,
+    "model": "C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz",
+}
+```
+
 # Rank prediction
 To make your own estimation of the level of your games : 
 - Place your .sgf file if the folder named "data"
