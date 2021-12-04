@@ -1,6 +1,12 @@
 # Context
 
-Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game lost or won) and the difference in rank between the player and his opponent.
+Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game lost or won) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
+
+| ELO  |     Rank      |
+|----------|:-------------:|
+| col 1 is |  left-aligned |
+| col 2 is |    centered   |
+| col 3 is | right-aligned |
 
 Multiple algorithms exist, from the simple ones, based on the rank of both oppenent and the outcome of the game, to more complex ones like the "Whole History Rating" which takes into accouont the time-varying strengths of players (https://www.remi-coulom.fr/WHR/)
 
