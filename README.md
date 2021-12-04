@@ -89,6 +89,6 @@ and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420
 
 # Rank prediction
 To make your own estimation of the level of your games : 
-- Place your .sgf file if the folder named "data"
+- Place your .sgf file if the folder named `data`
 - Launch the file `GoPredict.py`
-- Open the newly created file "prediction.csv"
+- Open the newly created file `prediction.csv`
