@@ -68,7 +68,9 @@ Language : Python 3 or more,
 Libraries : Refer to the requirements.txt file
 ### If you've never done it
 To run it : 
-- Be sure to have python installed on your machine (if not, just install [anaconda](https://docs.anaconda.com/anaconda/install/windows/))
+- Be sure to have python installed on your machine 
+-- (if not, just install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
+ or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg))
 - Go in the main folder and double-click "install.bat" to make sure you have all python dependencies that are needed for the program to run
 
 ## Settings
