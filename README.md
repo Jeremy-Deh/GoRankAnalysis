@@ -14,7 +14,7 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 |  -300 to -201  |   **3 kyu**   | 1701 to 1800 |
 |  -200 to -101  |   **2 kyu**   | 1801 to 1900 |
 |   -100 to -1   |   **1 kyu**   | 1901 to 2000 |
-|----------------|:-------------:|--------------|
+---
 |    0 to 99     |   **1 dan**   | 2001 to 2100 |
 |   100 to 199   |   **2 dan**   | 2101 to 2200 |
 |       ...      |       ...     |      ...     |
