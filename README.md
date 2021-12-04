@@ -63,9 +63,20 @@ The median error of rank estimation being less than 2, which is in the range of 
 
 # Installation
 ## Requirements 
-...
+### If you're familiar with python or programming 
+Language : Python 3 or more,
+Libraries : Refer to the requirements.txt file
+### If you've never done it
+To run it : 
+- Be sure to have python installed on your machine (if not, just install [anaconda](https://docs.anaconda.com/anaconda/install/windows/))
+- Go in the main folder and double-click "install.bat" to make sure you have all python dependencies that are needed for the program to run
+
 ## Settings
 In settings replace the line "model" with ...
 ...
 # Use
-Start the file ...
+To make your own estimation of the level of your games : 
+- Clone this repo (or download it)
+- Place your .sgf file if the folder named "data"
+- Launch the file "GoPredict.py"
+- Open the newly created file "prediction.csv"
