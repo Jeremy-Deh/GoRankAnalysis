@@ -73,7 +73,7 @@ To run it :
 >   if you don't have it, just download and install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
  or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg)
 - After the installation is complete, clone this repo (or download the [folder](https://github.com/Jeremy-Deh/GoRankAnalysis/archive/refs/heads/main.zip) and unzip it) 
-- Go in the main folder and double-click "install.bat" (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
+- Go in the main folder and double-click `install.bat` (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
 
 ## Settings
 In `GoPredict.py` find :
