@@ -2,24 +2,24 @@
 
 Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game lost or won) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
 
-| Elo (FR) |     Rank      |  Elo (EU) |
+|Elo (FR)   |     Rank      |  Elo (EU) |
 |----------|:-------------:| ----------|
-| to |  **20 kyu** | 1 to 100 |
-| to |  **19 kyu** | 101 to 200 |
-| to |  **18 kyu** | 201 to 300 |
-| to |  **17 kyu** | 301 to 400 |
-| to |  **16 kyu** | 401 to 500 |
+| -2000 to -1901 |  **20 kyu** | 1 to 100 |
+| -1900 to -1801 |  **19 kyu** | 101 to 200 |
+| -1800 to -1701 |  **18 kyu** | 201 to 300 |
+| -1700 to -1601 |  **17 kyu** | 301 to 400 |
+| -1600 to -1501 |  **16 kyu** | 401 to 500 |
 | ... |  ... | ... |
-| to |  **6 kyu** | 1401 to 1500 |
-| to |  **5 kyu** | 1501 to 1600 |
-| to |  **4 kyu** | 1601 to 1700 |
-| to |  **3 kyu**| 1701 to 1800 |
-| -199 to -100 |  **2 kyu**| 1801 to 1900 |
-| -99 to 0 |  **1 kyu**| 1901 to 2000 |
-| 1 to 100 | **1 dan**| 2001 to 2100 |
-| 101 to 200 | **2 dan**| 2101 to 2200 |
+| -600 to -501|  **6 kyu** | 1401 to 1500 |
+| -500 to -401 |  **5 kyu** | 1501 to 1600 |
+| -400 to -301 |  **4 kyu** | 1601 to 1700 |
+| -300 to -201 |  **3 kyu**| 1701 to 1800 |
+| -200 to -101 |  **2 kyu**| 1801 to 1900 |
+| -100 to -1 |  **1 kyu**| 1901 to 2000 |
+| 0 to 99 | **1 dan**| 2001 to 2100 |
+| 100 to 199 | **2 dan**| 2101 to 2200 |
 | ... |  ... | ... |
-| 601 to 700 | **7 dan**| 2601 to 2700 |
+| 600 to 699 | **7 dan**| 2601 to 2700 |
 
 
 
