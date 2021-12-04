@@ -23,7 +23,7 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 
 
 
-Multiple algorithms exist, from the simple ones, based on the rank of both oppenent and the outcome of the game, to more complex ones like the "Whole History Rating" which takes into accouont the time-varying strengths of players (https://www.remi-coulom.fr/WHR/)
+Multiple algorithms exist, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/)which takes into accouont the time-varying strengths of players 
 
 However all these methods suffer from multiple major limitations for a reliable estimation of level
 
