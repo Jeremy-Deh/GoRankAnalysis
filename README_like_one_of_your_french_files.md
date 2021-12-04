@@ -1,5 +1,4 @@
-- For the installtion, go directly to the **Installation** subcategory
-- For the french version, open the file "**README_like_one_of_your_french_files.md**" (if you don't find it, well... just wait for the update when i'll add it ;) )
+-- Pour la version française, il va falloir attendre encore un peu
 # Context
 
 Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
@@ -55,12 +54,7 @@ While the predictions can intrinsically not return the exact level of all player
 If we take into account that a player with a fixed rank does not play every game with the same strength, the performances of the model are strongly accurate and allow the establishment of a quick and reliable assesment of the person's level.
 
 The median error of rank estimation being less than 2, which is in the range of strength variation of a player,we can assume that the difference between the prediction given by the model and the official rank of the player at the time he played the game, can be mainly imputed to the human performance variation.
-![ConfusionGraph](ModelPerformances/ConfusionGraph.png)
-![Repartition](ModelPerformances/error.png)
-![RepartitionAbsoluteError](ModelPerformances/AbsError.png)
-
-
-
+![Test](ModelPerformances/error.png)
 # Installation
 ## Requirements 
 ...
