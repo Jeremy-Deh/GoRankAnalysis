@@ -1,8 +1,0 @@
-.gitignore
-AnalyseAvance.csv
-*.ipynb
-sgftest
-.ipynb_checkpoints
-catboost_info
-data/
-GoTraining.py
