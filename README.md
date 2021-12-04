@@ -64,11 +64,11 @@ The median error of rank estimation being less than 2, which is in the range of 
 # Installation
 ## Requirements 
 ### If you're familiar with python or programming 
-**Language :** Python 3 or more,
+**- Language :** Python 3 or more,
 
-**Libraries :** Refer to the requirements.txt file
+**- Libraries :** Refer to the requirements.txt file
 
-**Models** You will need two models to make it run :
+**- Models** You will need two models to make it run :
 The first one to assess the strength of every move played during the game, that you can download on the github of Katago, [here for Windows with only CPU](https://github.com/lightvector/KataGo/releases/download/v1.10.0/katago-v1.10.0-eigen-windows-x64.zip)  [or here](https://github.com/lightvector/KataGo/releases) if you want a GPU version or if you're using Linux or Mac.
 The second one to predict the rank of the player on the KGS scale, according to his moves. This one is present in this project and don't need any extra-downloads
 ### If reading code lines gives you headaches
