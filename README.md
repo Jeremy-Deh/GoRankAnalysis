@@ -4,7 +4,7 @@
 # Description
 GoRankAnalysis is a pretrained model that can estimate the rank of someone using only one game provided to the program as a `.sgf` file.
 
-While the use of AI in the world of Go has mostly spread to review games and see what mistakes we've made during a game, and learn some better moves, this program aims to have a better ranking system in Go, that would be stable and more representative of players' strength.
+While the use of AI in the world of Go has mostly spread to review games and see what mistakes we've made during a game, and learn some better moves, this program aims is to pave th path too a better ranking system in Go, that would be stable and more representative of players' strength.
 
 Wether You want to verify if you're getting stronger with time, or if you're 3 kyu but imagine you're already better than a 1 dan that lived 100 years ago, because of the evolution of Go and Go strategies, you can now verify all of that.
 
@@ -61,7 +61,8 @@ In order to do so, multiple alternatives exist :
 
 It's not the first time Go federations modify their way of adjusting the rankings to improve the system. [Historically](https://ffg.jeudego.org/echelle/chronologie_echelle_ffg_1981_2011.pdf), the French Federation of Go changed its algorithm on multiple occasions to adapt the ranking system to the time and needs. 
 
-In 1985 the current algorithm was implemented in BASIC, in 1997 it was modified to incorporate the strongest european players with impementation of the "10% formula", then in 2000 the FFG changed again the algorithm to better represent the ranking in the "high-kyu low-dan" rank and the "very low kyu" with some minor adjustments to that algorithm made in 2002, 2009 and 2010. The whole algorithm was then changed in the end of 2012 and is still acting as 2022 approaches, event though some rank adjustments are still performed, as in the summer 2021 kyu players were given 100 Elo points. 
+>In 1985 the current algorithm was implemented in BASIC, in 1997 it was modified to incorporate the strongest european players with impementation of the "10% formula", then in 2000 the FFG changed again the algorithm to better represent the ranking in the "high-kyu low-dan" rank and the "very low kyu" with some minor adjustments to that algorithm made in 2002, 2009 and 2010. The whole algorithm was then changed in the end of 2012 and is still acting as 2022 approaches, event though some rank adjustments are still performed, as in the summer 2021 kyu players were given 100 Elo points
+. 
 
 and it is now time to adapt to the recent advances in Go with Artificial Intelligence.
 
