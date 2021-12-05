@@ -114,7 +114,9 @@ and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420
 
 # Rank prediction
 You are now ready to go and estimate your own games by giving this program your `.sgf` files.
+
 To do so : 
 - Place one or more .sgf file if the folder named `data`
 - Launch the file `GoPredict.py`
 - Open the newly created file `prediction.csv`
+
