@@ -4,13 +4,14 @@
 # Description
 GoRankAnalysis is a pretrained model that can estimate the rank of someone using only one game provided to the program as a `.sgf` file.
 
-While use of AI in the world of Go is mostly used to review games and see what mistake we made during a game, and learn some better moves, this program aims to have a better ranking system in Go, that would be stable and more representative of players's strength.
+While use of AI in the world of Go is mostly used to review games and see what mistake we made during a game, and learn some better moves, this program aims to have a better ranking system in Go, that would be stable and more representative of players' strength.
+
 Wether You want to verify if you're getting stronger with time, or if you're 3 kyu but imagine you're already better than a 1 dan that lived 100 years ago, because of the evolution of Go and Go strategies, you can now verify all of that.
 
 
 # Context
 
-Ranking in Go uses a kyu/dan system (kyu for the majority of us) and dan for the strong players. It starts from 20kyu (for the very beginners) to 1 kyu (for the confirmed players), then from 1 dan (for the good players) to 9 dan (very strong professional players) 
+Ranking in Go uses a kyu/dan system (kyu for the majority of us and dan for the strong players). It starts from 20kyu (for the very beginners) to 1 kyu (for the confirmed players), then from 1 dan (for the good players) to 9 dan (very strong professional players) 
 
 But there is no official representation of what a strength of 1dan or 10kyu represents, therefore it can vary from a country to another one.
 
@@ -35,20 +36,20 @@ Current methods of ranking in Go rely mostly on an Elo system where the player w
 
 
 
-Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both oppenent and the outcome of the game, as the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into account the time-varying strengths of players. However, for all of those algorithms, the initial assessment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
+Multiple algorithms exist to update the player's rank, from the simple ones, based on the rank of both opponent and the outcome of the game, like the ones used by the [French Federation of Go](https://ffg.jeudego.org/echelle/echelle_algo_2012.php), to more complex ones like the [Whole History Rating](https://www.remi-coulom.fr/WHR/) which takes into account the time-varying strengths of players. However, for all of those algorithms, the initial assessment must always be self-declarative (or initialized as the lowest possible) as there is no way to watch a player's moves and directly determine its rank.
 
 Even more, these methods suffer from multiple major limitations for a reliable estimation of a rank :
 
-1. They require multiple games to adjust the true level of someone which is making fast progresses, therefore, their ranking does not always represent their real level and capabilities.
+1. They require multiple games to adjust the true level of someone, therefore, their ranking does not always represent their real level and capabilities.
 
-2. These methods are higly suceptible to the arrival of new waves of players. Indeed, if a lot of new players arrive, the previously ranked players which have some experience will win a lot of games against the new players, increasing their rank even though their true level and strength did not change. By going up they will face better players that themselves will rank up. Therefore, the ranking system does not represent a fixed level or strength, but more of a relative classent among the current players, that will quickly vary. This problem often requires the need of players called [anchors](https://www.gokgs.com/help/anchor.html), players that are supposedly very stable and do not get better over time, and that are used to recalibrate everyone, preventing those fluctuations.
+2. These methods are higly suceptible to the arrival of new waves of players. Indeed, if a lot of new players arrive, the previously ranked players which have some experience will win a lot of games against the new players, increasing their rank even though their true level and strength did not change. By going up they will face better players that themselves will rank up. Therefore, the ranking system does not represent a fixed level or strength, but more of a relative classment among the current players, that will quickly vary. This problem often requires the need of players called [anchors](https://www.gokgs.com/help/anchor.html). Anchors are players that are supposedly very stable and do not get better over time, and that are used to recalibrate everyone, preventing those fluctuations. It's a solution often used on internet but not possible for official national or international rankings.
 
-3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone ranked 1 dan today, has the same strength than someone ranked 1 dan that lived centuries ago, as there is no way for a "21st century 1 dan" to play against a "XVIIe century 1 dan" and compare which of them was better.
+3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone ranked 1 dan today, has the same strength than someone ranked 1 dan that lived centuries ago, as there is no way for a "21st century 1 dan" to play against a "17e century 1 dan" and compare which of them was better.
 
 
 
-This way of mesuring somebody's strength, is equivalent to using body members to measure distances, if you're using your feet to measure a distance, 5 feet might be more or less a good representation of distance in your comunity, but would propably not represent the same distance in another country, or even in the same population in 100 years.
-That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently base on speed of light as it represents the distance by light in 1/300.000.000 sec and the seconde itself is based on the cesium atom oscillations), and no one would ever think using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
+This way of mesuring somebody's strength, is equivalent to using body members to measure distances. If you're using your feet to measure a distance, 5 feet might be more or less a good representation of distance in your comunity, but would propably not represent the same distance in another country, or even in the same population in 100 years.
+That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently base on the speed of light, as it represents the distance by light in 1/300.000.000 sec in the void. The second itself is based on the cesium atom oscillations), and no one would ever think using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
 
 
 
