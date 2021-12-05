@@ -4,9 +4,19 @@
 # Description
 GoRankAnalysis is a pretrained model that can estimate the rank of someone using only one game provided to the program as a `.sgf` file.
 
+While use of AI in the world of Go is mostly used to review games and see what mistake we made during a game, and learn some better moves, this program aims to have a better ranking system in Go, that would be stable and more representative of players's strength.
+Wether You want to verify if you're getting stronger with time, or if you're 3 kyu but imagine you're already better than a 1 dan that lived 100 years ago, because of the evolution of Go and Go strategies, you can now verify all of that.
+
+
 # Context
 
-Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
+Ranking in Go uses a kyu/dan system (kyu for the majority of us) and dan for the strong players. It starts from 20kyu (for the very beginners) to 1 kyu (for the confirmed players), then from 1 dan (for the good players) to 9 dan (very strong professional players) 
+
+But there is no official representation of what a strength of 1dan or 10kyu represents, therefore it can vary from a country to another one.
+
+If you are a man of 177cm, and if we were still mesuring heights and lengths like we mesure Go ranking, you would probably be 5-kyu-tall in New-Zealand (where 177cm is average for a man) but you'd probably be 3-dan-tall in Honduras (where the average man is 166 cm), but fortunately, you are not 6k-tall somewhere and 3d-tall somewhere else, you are 177cm tall **everywhere**.
+
+Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted to the kyu/dan ranking system .
 
 |    Elo (FR)    |     Rank      |   Elo (EU)   |
 |:--------------:|:-------------:|:------------:|
@@ -31,11 +41,18 @@ Even more, these methods suffer from multiple major limitations for a reliable e
 
 1. They require multiple games to adjust the true level of someone which is making fast progresses, therefore, their ranking does not always represent their real level and capabilities.
 
-2. These methods are higly suceptible to the arrival of new waves of players, as if a lot of new player arrive, the previously middle-ranked players which have some experience will win a lot of games against those freshmens arriving, increasing their rank even though their true level and strength did not change. This problem often requires the need of players called [anchors](https://www.gokgs.com/help/anchor.html), players that are supposedly very stable and do not get better over time, and that are used to recalibrate everyone.
+2. These methods are higly suceptible to the arrival of new waves of players. Indeed, if a lot of new players arrive, the previously ranked players which have some experience will win a lot of games against the new players, increasing their rank even though their true level and strength did not change. By going up they will face better players that themselves will rank up. Therefore, the ranking system does not represent a fixed level or strength, but more of a relative classent among the current players, that will quickly vary. This problem often requires the need of players called [anchors](https://www.gokgs.com/help/anchor.html), players that are supposedly very stable and do not get better over time, and that are used to recalibrate everyone, preventing those fluctuations.
 
 3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone ranked 1 dan today, has the same strength than someone ranked 1 dan that lived centuries ago, as there is no way for a "21st century 1 dan" to play against a "XVIIe century 1 dan" and compare which of them was better.
 
-For all these reason the ranking system needs a more accurate and also faster way to determine the level of a player
+
+
+This way of mesuring somebody's strength, is equivalent to using body members to measure distances, if you're using your feet to measure a distance, 5 feet might be more or less a good representation of distance in your comunity, but would propably not represent the same distance in another country, or even in the same population in 100 years.
+That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently base on speed of light as it represents the distance by light in 1/300.000.000 sec and the seconde itself is based on the cesium atom oscillations), and no one would ever think using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
+
+
+
+For all these reason, and like all other measurment system the ranking system of Go needs a more accurate and more stable  way of measuring people's strength.
 
 In order to do so, a good alternative would be to increase or decrease the points a player after a game according to the real strength of the moves he played during the game, rather than the level of his opponent, This has been made possible with the arrival of deep learning capable of defeating any human by better estimating the value of each moves in any situation on the board. Initiated by Google with AlphaGo, the use of deep learning in Go widely spread with models like leela or katago that can be run on almost any computer, with or without GPU, and are better than professional players.
 
