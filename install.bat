@@ -9,7 +9,7 @@ goto :EOF
 
 :PYTHON_DOES_NOT_EXIST
 echo Python is not installed on your system.
-echo Now opeing the download URL.
+echo Now opening the download URL.
 start "" "https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe"
 echo Download the file and install it, then wait for the end before pressing any key 
 pause
