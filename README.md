@@ -4,7 +4,7 @@
 # Description
 GoRankAnalysis is a pretrained model that can estimate the rank of someone using only one game provided to the program as a `.sgf` file.
 
-While use of AI in the world of Go is mostly used to review games and see what mistake we made during a game, and learn some better moves, this program aims to have a better ranking system in Go, that would be stable and more representative of players' strength.
+While the use of AI in the world of Go has mostly spread to review games and see what mistakes we've made during a game, and learn some better moves, this program aims to have a better ranking system in Go, that would be stable and more representative of players' strength.
 
 Wether You want to verify if you're getting stronger with time, or if you're 3 kyu but imagine you're already better than a 1 dan that lived 100 years ago, because of the evolution of Go and Go strategies, you can now verify all of that.
 
@@ -13,7 +13,7 @@ Wether You want to verify if you're getting stronger with time, or if you're 3 k
 
 Ranking in Go uses a kyu/dan system (kyu for the majority of us and dan for the strong players). It starts from 20kyu (for the very beginners) to 1 kyu (for the confirmed players), then from 1 dan (for the good players) to 9 dan (very strong professional players) 
 
-But there is no official representation of what a strength of 1dan or 10kyu represents, therefore it can vary from a country to another one.
+But there is no official representation of what strength represent being 1 dan or being 10 kyu, therefore it can vary from a country to another one.
 
 If you are a man of 177cm, and if we were still mesuring heights and lengths like we mesure Go ranking, you would probably be 5-kyu-tall in New-Zealand (where 177cm is average for a man) but you'd probably be 3-dan-tall in Honduras (where the average man is 166 cm), but fortunately, you are not 6k-tall somewhere and 3d-tall somewhere else, you are 177cm tall **everywhere**.
 
@@ -44,7 +44,7 @@ Even more, these methods suffer from multiple major limitations for a reliable e
 
 2. These methods are higly suceptible to the arrival of new waves of players. Indeed, if a lot of new players arrive, the previously ranked players which have some experience will win a lot of games against the new players, increasing their rank even though their true level and strength did not change. By going up they will face better players that themselves will rank up. Therefore, the ranking system does not represent a fixed level or strength, but more of a relative classment among the current players, that will quickly vary. This problem often requires the need of players called [anchors](https://www.gokgs.com/help/anchor.html). Anchors are players that are supposedly very stable and do not get better over time, and that are used to recalibrate everyone, preventing those fluctuations. It's a solution often used on internet but not possible for official national or international rankings.
 
-3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone ranked 1 dan today, has the same strength than someone ranked 1 dan that lived centuries ago, as there is no way for a "21st century 1 dan" to play against a "17e century 1 dan" and compare which of them was better.
+3. Finally, these method are also highly biaised by the geographical and time locations of each players. For example, a rank of 1 dan does not represent the same strength in different countries, we also have no way to know if someone ranked 1 dan today, has the same strength than someone ranked 1 dan that lived centuries ago, as there is no way for a "21<sup>st</sup> century 1 dan" to play against a "17<sup>th</sup> century 1 dan" and compare which of them was better.
 
 
 
