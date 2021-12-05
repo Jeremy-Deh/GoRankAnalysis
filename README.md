@@ -98,7 +98,7 @@ To run it :
 >   if you don't have it, just download and install [anaconda for windows](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe)
  or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg)
 - After the installation is complete, clone this repo (or download the [folder](https://github.com/Jeremy-Deh/GoRankAnalysis/archive/refs/heads/main.zip) and unzip it) 
-- Go in the main folder and double-click `install.bat` (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
+- Go in the main folder and double-click `install.bat` (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. (If you're usin Mac, use a shell to pip install the dependancies that you can find in the file `requirements.txt`)
 - Download a [network file](https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b40c256-s10359230464-d2525387336.bin.gz) which will be used by the program to estimate the score of the moves.
 ## Settings
 In `GoPredict.py` find :
@@ -113,7 +113,8 @@ settings = {
 and change the `C:\\Users\\jerem\\Documents\\Go\\Katago\\g170-b40c256x2-s5095420928-d1229425124.bin.gz` for the pathway and name of the .bin.gz that you've got downloaded earlier.
 
 # Rank prediction
-To make your own estimation of the level of your games : 
+You are now ready to go and estimate your own games by giving this program your `.sgf` files.
+To do so : 
 - Place one or more .sgf file if the folder named `data`
 - Launch the file `GoPredict.py`
 - Open the newly created file `prediction.csv`
