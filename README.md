@@ -48,17 +48,17 @@ Even more, these methods suffer from multiple major limitations for a reliable e
 
 
 
-This way of mesuring somebody's strength, is equivalent to using body members to measure distances. If you're using your foot to measure a distance, 5 feet might be more or less a good representation of distance in your comunity, but would propably not represent the same distance in another country, or even in the same population in 100 years.
-That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently base on the speed of light, as it represents the distance traveled by light in 1/300.000.000<sup>th</sup> of a second in the void. The second itself is based on the cesium atom oscillations), and no one would ever think using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
+This way of mesuring somebody's strength, is equivalent to using body members to measure distances. If you're using your foot to measure a distance, 5 feet might be more or less a good representation of distance in your community, but would propably not represent the same distance in another country, or even in the same population in 100 years.
+That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently based on the speed of light, as it represents the distance traveled by light in 1/300.000.000<sup>th</sup> of a second in the void. The second itself is based on the cesium atom oscillations), and no one would ever think of using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
 
 
 For all these reason, and like all other measurment systems the ranking system of Go needs a more accurate and more stable  way of measuring people's strength.
 
 In order to do so, multiple alternatives exist :
-1. A good alternative would be to increase or decrease the Elo points of a player after a game according to the real strength of the moves he played during the game. e.g : if a player is 12 kyu, but played its last game like a 9 kyu, and still loose the game, th player would still win some Elo points, as his level clearly increased since its last tournament even though he lost the game to a stronger player .
+1. A possible one would be to increase or decrease the Elo points of a player after a game according to the real strength of the moves he played during the game. *e.g* : if a player is 12 kyu, but played its last game like a 9 kyu, and still loose the game, the player would still win some Elo points, as his level clearly increased since its last tournament even though he lost the game to a stronger player .
 2. Another possibility would be to assess the level played during the last *x* games on a rolling window and use them with an EWW (Exponential Weight Window) approach, giving more weight to the last games, and less to the old ones, to determine the current level of the player.
 
- This has been made possible with the arrival of deep learning capable of defeating any human by better estimating the value of each moves in any situation on the board. Initiated by Google with AlphaGo, the use of deep learning in Go widely spread with models like leela or katago, that can be run on almost any computer, with or without GPU, and are better than professional players.
+ This has been made possible with the arrival of deep learning capable of defeating any human by better estimating the value of each moves in any situation on the board. Initiated by Google with [AlphaGo](https://www.nature.com/articles/nature16961) and [AlphaGoZero](https://www.nature.com/articles/nature24270), the use of deep learning in Go widely spread with models like leela or katago, that can be run on almost any computer, with or without GPU, and are better than professional players.
 
 # Presentation
 Based on a Machine learning approach, this model was trained on more than 500 games and more than 500 different players ranking from 16 kyu to 9 dan, 
