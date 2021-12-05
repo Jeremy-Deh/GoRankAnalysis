@@ -52,11 +52,18 @@ This way of mesuring somebody's strength, is equivalent to using body members to
 That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently based on the speed of light, as it represents the distance traveled by light in 1/300.000.000<sup>th</sup> of a second in the void. The second itself is based on the cesium atom oscillations), and no one would ever think of using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
 
 
-For all these reason, and like all other measurment systems the ranking system of Go needs a more accurate and more stable  way of measuring people's strength.
+For all these reason, and like all other measurment systems the ranking system of Go needs a more accurate and more stable way of measuring people's strength.
 
 In order to do so, multiple alternatives exist :
 1. A possible one would be to increase or decrease the Elo points of a player after a game according to the real strength of the moves he played during the game. *e.g* : if a player is 12 kyu, but played its last game like a 9 kyu, and still loose the game, the player would still win some Elo points, as his level clearly increased since its last tournament even though he lost the game to a stronger player .
 2. Another possibility would be to assess the level played during the last *x* games on a rolling window and use them with an EWW (Exponential Weight Window) approach, giving more weight to the last games, and less to the old ones, to determine the current level of the player.
+
+
+It's not the first time Go federations modify their way of adjusting the rankings to improve the system. [Historically](https://ffg.jeudego.org/echelle/chronologie_echelle_ffg_1981_2011.pdf), the French Federation of Go changed its algorithm on multiple occasions to adapt the ranking system to the time and needs. 
+
+In 1985 the current algorithm was implemented in BASIC, in 1997 it was modified to incorporate the strongest european players with impementation of the "10% formula", then in 2000 the FFG changed again the algorithm to better represent the ranking in the "high-kyu low-dan" rank and the "very low kyu" with some minor adjustments to that algorithm made in 2002, 2009 and 2010. The whole algorithm was then changed in the end of 2012 and is still acting as 2022 approaches, event though some rank adjustments are still performed, as in the summer 2021 kyu players were given 100 Elo points. 
+
+and it is now time to adapt to the recent advances in Go with Artificial Intelligence.
 
  This has been made possible with the arrival of deep learning capable of defeating any human by better estimating the value of each moves in any situation on the board. Initiated by Google with [AlphaGo](https://www.nature.com/articles/nature16961) and [AlphaGoZero](https://www.nature.com/articles/nature24270), the use of deep learning in Go widely spread with models like leela or katago, that can be run on almost any computer, with or without GPU, and are better than professional players.
 
@@ -87,7 +94,7 @@ The median error of rank estimation being less than 2, which is in the range of 
 ### If you're familiar with python or programming 
 `- Language :` Python 3 or more,
 
-`- Libraries :` Refer to the requirements.txt file
+`- Libraries :` Please refer to the requirements.txt file
 
 `- Models :` You will need two models to make it run :
 1. The first one to assess the strength of every move played during the game, for that, you will need a [network file](https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b40c256-s10359230464-d2525387336.bin.gz) (if it is ever down, you can find the latest network [here](https://katagotraining.org/networks/)).
