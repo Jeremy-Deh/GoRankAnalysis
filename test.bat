@@ -11,7 +11,7 @@ goto :EOF
 echo Python is not installed on your system.
 echo Now opeing the download URL.
 start "" "https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe"
-echo Download the fil and install it, then wait for the end before pressing any key 
+echo Download the file and install it, then wait for the end before pressing any key 
 pause
 goto :EOF
 
