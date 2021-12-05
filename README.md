@@ -1,5 +1,9 @@
 - For the installtion, go directly to the **Installation** subcategory
 - For the french version, open the file "**README_like_one_of_your_french_files.md**"
+
+# Description
+GoRankAnalysis is a pretrained model that can estimate the rank of someone using only one game provided to the program as a `.sgf` file.
+
 # Context
 
 Current methods of ranking in Go rely mostly on an Elo system where the player win or loose some points after a game depending of the output (game won or lost) and the difference in rank between the player and his opponent. Those Elo points are then converted into the ranking system kyu-dan.
