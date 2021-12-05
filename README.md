@@ -48,8 +48,8 @@ Even more, these methods suffer from multiple major limitations for a reliable e
 
 
 
-This way of mesuring somebody's strength, is equivalent to using body members to measure distances. If you're using your feet to measure a distance, 5 feet might be more or less a good representation of distance in your comunity, but would propably not represent the same distance in another country, or even in the same population in 100 years.
-That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently base on the speed of light, as it represents the distance by light in 1/300.000.000 sec in the void. The second itself is based on the cesium atom oscillations), and no one would ever think using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
+This way of mesuring somebody's strength, is equivalent to using body members to measure distances. If you're using your foot to measure a distance, 5 feet might be more or less a good representation of distance in your comunity, but would propably not represent the same distance in another country, or even in the same population in 100 years.
+That is why current systems of measure are all established relatively to unvarying elements (1 metre is currently base on the speed of light, as it represents the distance traveled by light in 1/300.000.000$$^{th}$$ of a second in the void. The second itself is based on the cesium atom oscillations), and no one would ever think using body members to measure anything. Even in the imperial system the foot unit is now officialy based on the metric system since 1959.
 
 
 
