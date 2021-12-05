@@ -65,8 +65,8 @@ The median error of rank estimation being less than 2, which is in the range of 
 `- Libraries :` Refer to the requirements.txt file
 
 `- Models :` You will need two models to make it run :
-1. The first one to assess the strength of every move played during the game, that you can download on the github of Katago, [here for Windows with only CPU](https://github.com/lightvector/KataGo/releases/download/v1.10.0/katago-v1.10.0-eigen-windows-x64.zip) or [here](https://github.com/lightvector/KataGo/releases) if you want a GPU version or if you're using Linux or Mac.
-2. The second one to predict the rank of the player on the KGS scale, according to his moves. This one is present in this project and don't need any extra-downloads
+1. The first one to assess the strength of every move played during the game, for that, you will need a [network file](https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b40c256-s10359230464-d2525387336.bin.gz) (if it is ever down, you can find the latest network [here](https://katagotraining.org/networks/)).
+2. The second one to predict the rank of the player on the KGS scale, according to his moves. This one is a pickle present in this project and don't need any extra-downloads
 ### If reading code lines gives you headaches
 To run it : 
 - Be sure to have python installed on your machine 
@@ -74,7 +74,7 @@ To run it :
  or [anaconda for mac](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg)
 - After the installation is complete, clone this repo (or download the [folder](https://github.com/Jeremy-Deh/GoRankAnalysis/archive/refs/heads/main.zip) and unzip it) 
 - Go in the main folder and double-click `install.bat` (if you're on Windows) to make sure you have all python dependencies that are needed for the program to run. 
-
+- Download a [network file](https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b40c256-s10359230464-d2525387336.bin.gz) which will be used by the program to estimate the score of the moves.
 ## Settings
 In `GoPredict.py` find :
 ```python
